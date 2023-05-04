@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+.section__myResumes {
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+
+
+    @media screen and (max-width: 650px) {
+        padding-top: 30px;
+    }
+
+
+
+    & .myResumes {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+        @media screen and (max-width: 992px) {
+            padding: 60px;
+            margin-top: 50px;
+            max-width: none;
+            min-height: 400px;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: auto;
+        }
+
+        @media screen and (max-width: 700px) {
+            margin-top: 50px;
+            padding: 0px 0px;
+        }
+
+
+        &__title {
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 0px;
+            text-align: center;
+            color: #000000;
+            
+
+
+
+            @media screen and (max-width: 700px) {
+
+                font-size: 56px;
+
+            }
+        }
+
+        &__text {
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 0px;
+            text-align: center;
+            color: #000000;
+            margin: 70px 0px;
+
+            @media screen and (max-width: 700px) {
+
+                font-size: 40px;
+
+            }
+
+        }
+
+        &__link {
+                
+            border: 0;
+            outline: none;
+
+            background: linear-gradient(107.62deg, #FFD600 -53.02%, #FFC350 134.49%);
+            border-radius: 100px;
+            cursor: pointer;
+            transition: ALL ease-in-out .5s;
+            
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            color: #282828;
+            margin: 0;
+
+            padding: 5px 70px;
+            
+            @media screen and (max-width: 700px) {
+
+                padding: 2px 50px;
+
+            }
+
+            &:hover {
+                background: #ffa908;
+            }
+        }
+
+    }
+
+}
